@@ -9,6 +9,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 import { RegisterComponent } from './register/pages/register/register.component';
 import { LoginComponent } from './login/pages/login/login.component';
 
@@ -26,6 +28,7 @@ import { LoginComponent } from './login/pages/login/login.component';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,17 @@
-<div id="sideNav" class="sideNav" [class.close]="classToggled" *ngIf="(router.url !== '/login' && router.url !== '/register')">
+<div class="topBar">
+    <button mat-mini-fab color="success" aria-label="Toggle sidebar" (click)="toggleBarMobile()">
+        <mat-icon>menu</mat-icon>
+    </button>
+</div>
+<div id="sideNav" class="sideNav" [class.close]="classToggled" [class.topBarDisplay]="topBarDisplay" *ngIf="(router.url !== '/login' && router.url !== '/register')">
     <div class="header">
         <img class="logo" src="../assets/favicon.png" alt="Logo of SureService">
         <h1>SureService</h1>
-        <button id="toggle" class="button" mat-mini-fab color="success" aria-label="Toggle sidebar" (click)="toggleBar()">
-            <mat-icon>keyboard_arrow_right</mat-icon>
+        <button class="button" mat-mini-fab color="success" aria-label="Toggle sidebar" (click)="toggleBar()">
+            <mat-icon id="iconToggle">{{open ? 'keyboard_arrow_left' : 'keyboard_arrow_right'}}</mat-icon>
+        </button>
+        <button class="button2" mat-mini-fab color="success" aria-label="Toggle sidebar" (click)="toggleBarMobile()">
+            <mat-icon>close</mat-icon>  
         </button>
     </div>
 
@@ -52,4 +60,5 @@
         </div>
     </div>
 </div>
+a
 <router-outlet></router-outlet>

@@ -5,6 +5,7 @@
     --secondaryFont: #1f3ad6;
     --button: #1537F2;
     --white: #ffffff;
+    --colorMain: rgba(21, 55, 242, 1);
 }
 
 html,
@@ -13,7 +14,7 @@ body {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,6 +33,10 @@ body {
 
 .bodyWidth{
     margin-left: 120px;
+}
+
+.bodyMobile{
+    margin-left: 0;
 }
 
 .OnLoginRegisterBody{

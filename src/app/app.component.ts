@@ -67,7 +67,10 @@ export class AppComponent implements OnInit{
         document.body.classList.remove("bodyOnAll");
       }
     }
-    if(window.innerWidth<1200 && window.innerWidth>760) this.classToggled=true;
+    if(window.innerWidth<1200 && window.innerWidth>760){
+      this.open=false;
+      this.classToggled=true;
+    } 
     else this.classToggled=false;
   }
 }

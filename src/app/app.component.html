@@ -1,4 +1,4 @@
-<div class="topBar">
+<div class="topBar" *ngIf="(router.url !== '/login' && router.url !== '/register')">
     <button mat-mini-fab color="success" aria-label="Toggle sidebar" (click)="toggleBarMobile()">
         <mat-icon>menu</mat-icon>
     </button>
@@ -60,5 +60,5 @@
         </div>
     </div>
 </div>
-a
+
 <router-outlet></router-outlet>

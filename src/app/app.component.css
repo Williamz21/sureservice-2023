@@ -177,6 +177,14 @@ h2 {
     body {
         margin: 0;
     }
+
+    .link{
+        gap: 2rem;
+    }
+
+    .link mat-icon {
+        justify-self: center;
+    }
 }
 
 .topBarDisplay{

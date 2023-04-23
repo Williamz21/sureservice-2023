@@ -14,6 +14,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { RegisterComponent } from './register/pages/register/register.component';
 import { LoginComponent } from './login/pages/login/login.component';
 
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +33,8 @@ import { LoginComponent } from './login/pages/login/login.component';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
+    FormsModule, ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
